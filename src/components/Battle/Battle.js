@@ -39,12 +39,14 @@ export default function Battle({ fruit1, fruit2 }) {
         
         // Loop over the the battle and save it to an array
         while(true) {
+            // Turn 1
             arr.push({'id':`i${totalDamage1}${turn}`, 'turn':`${turn}`})
             arr.push({'id':`i${totalDamage1}`, 'content':`${fruits[0].name} attacks and does ${attackPower1} points damage`})
             totalDamage1 = totalDamage1+attackPower1
             turn++
             let fruit2RemainingHealth = parseFloat((fruits[1].health - totalDamage1).toFixed(2))
 
+            // Check if fruit 2 has health left 
             if(totalDamage1>=fruits[1].health){
                 arr.push({'id':`i${totalDamage1}`, 'content': `GAME OVER! Fruit 2 ${fruits[1].name} has 0 HP left. Winner Fruit 1 ${fruits[0].name}`})
                 setWinMessage(`Game over! Fruit 2 ${fruits[1].name} has 0 HP left. Winner Fruit 1 ${fruits[0].name}.`)
@@ -52,12 +54,15 @@ export default function Battle({ fruit1, fruit2 }) {
             }
 
             arr.push({'id':`i${totalDamage1+1}`, 'content':`Remaining health of ${fruits[1].name}: ${fruit2RemainingHealth} HP`})
+
+            // Turn 2
             arr.push({'id':`y${totalDamage2}${turn}`, 'turn':`${turn}`})
             arr.push({'id':`y${totalDamage2}`, 'content':`${fruits[1].name} attacks and does ${attackPower2} points damage`})
             totalDamage2 = totalDamage2+attackPower2
             turn++
             let fruit1RemainingHealth = parseFloat((fruits[0].health - totalDamage2).toFixed(2))
 
+            // Check if fruit 1 has health left
             if(totalDamage2>=fruits[0].health){
                 arr.push({'id':`y${totalDamage2}`, 'content':`GAME OVER! Fruit 1 ${fruits[0].name} has 0 HP left. Winner Fruit 2 ${fruits[1].name}`})
                 setWinMessage(`Game over! Fruit 1 ${fruits[0].name} has 0 HP left. Winner Fruit 2 ${fruits[1].name}.`)
