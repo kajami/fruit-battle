@@ -10,18 +10,18 @@ Background photo by Tangerine Newt on Unsplash
 
 -----
 
-**HOW TO RUN LOCALLY**
+**HOW TO RUN LOCALLY**  
 If you want to run this locally clone the repository. Run "npm start" in the root folder to start the app. Set API_BASE_URL in /api/index.js to "https://www.fruityvice.com/api/fruit/all". Then go to /api- folder and run "npm start" to start the backend.
 
 -----
-**ABOUT THE GAME**
+**ABOUT THE GAME**  
 Fruits fight against each other until one of the fruit loses all its health points. Fruits have battle attributes according to the nutrititons they have.
 
-**BATTLE ATTRIBUTES**
-Delay = Carbohydrates + protein + fat
-Health = Calories
-Attack = Carbohydrates
-Defence = Fat
+**BATTLE ATTRIBUTES**  
+Delay = Carbohydrates + protein + fat  
+Health = Calories  
+Attack = Carbohydrates  
+Defence = Fat  
 
 **RULES**
 
