@@ -1,0 +1,31 @@
+.button {
+    margin: 10px;
+    font-size: 18px;
+    height: 65px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    background: lightgreen;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(233, 166, 78);
+}
+
+.infoStyle {
+    background-color: khaki;
+    padding:10px 30px 20px 20px;
+    border-radius:10px;
+    width: 200px;
+    min-width:200px; 
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+h4 {
+    text-decoration: underline;
+}

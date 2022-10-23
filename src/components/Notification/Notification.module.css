@@ -1,0 +1,18 @@
+.message {
+    font-size: 25px;
+    background-color: black;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 30vw;
+    border-radius: 25px;
+    opacity: 90%;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 400px) {
+    .message {
+        width: 50vw;
+    }
+  }

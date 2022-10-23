@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+h1{
+  font-size: 90px;
+  background: -webkit-linear-gradient(rgb(255, 219, 18), rgb(255, 116, 61));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  margin-top:20px;
+}
